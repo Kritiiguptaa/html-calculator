@@ -28,6 +28,7 @@ text-decoration-line: underline;
     align-items: center;
     width: 100%;
 } 
+
 .in_out{
     position: relative;
     display: flex;
@@ -51,7 +52,7 @@ text-decoration-line: underline;
     /* position: relative; */
     border-radius: 9px;
     height: 80px;
-    width: 30%;
+    /* width: 30%; */
     padding-right: 15px;
     padding-top: 10px;
     text-align: center;
@@ -72,8 +73,8 @@ text-decoration-line: underline;
 .container{
     display: grid;
     border: 2px solid black;
-    width: 20%;
-    /* width: max-content; */
+    /* width: 20%; */
+    width: max-content;
     padding: 20px;
     border-radius: 20px;
     margin: 30px 0px;
@@ -168,3 +169,18 @@ button:hover {
   button{
     cursor: pointer;
   }
+
+  @media (max-width:425px){
+    h1{
+       font-size: 50px;
+    }
+}
+
+@media (min-width:425px)and (max-width:768px){
+    h1{
+       font-size: 55px;
+    }
+    .box{
+        height:44px;
+    }
+}
