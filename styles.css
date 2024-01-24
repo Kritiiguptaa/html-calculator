@@ -181,6 +181,6 @@ button:hover {
        font-size: 55px;
     }
     .box{
-        height:44px;
+        width: 80%;
     }
 }
