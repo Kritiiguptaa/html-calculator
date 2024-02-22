@@ -39,7 +39,7 @@ function screenResult(){
 screen.onkeydown = function(event) {
     event.key=event.target.innerText;
     console.log('event.key is',event.key);
-    // Only allow if the e.key value is a number or if it's 'Backspace'
+    // Only allow if the event.key value is a number or if it's 'Backspace'
       if(isNaN(event.key) && event.key !== 'Backspace' && event.key !=='Enter' && event.key !=='+' && event.key !=='-' && event.key !=='*' && event.key !=='/' && event.key !=='=' && event.key !=='.' && event.key !=='ArrowLeft' && event.key !=='ArrowRight') {
         event.preventDefault();
       }
